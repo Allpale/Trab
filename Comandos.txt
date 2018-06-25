@@ -1,0 +1,25 @@
+Idle 0
+
+Run 1
+
+Dead 2
+
+Glide 3
+
+Hurt 4
+
+Jump Attack 5
+
+Attack 6
+
+Kunai 7
+
+Jump 8
+
+Jump Kunai 9
+
+Slide 10
+
+Hurt 11
+
+Falling 12
