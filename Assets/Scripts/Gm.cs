@@ -7,13 +7,17 @@ public class Gm : MonoBehaviour {
 	public static Gm instance = null;
 
 	public float yMinLive = -5.5f;
+	
+	PlayerCtrl player;
+	
+	public float timeToRespan = 2f;
 	public Transform spawnPoint;
 	public GameObject playerPrefab;
 
-	PlayerCtrl player;
+	public UI ui;
 
-	public float timeToRespan = 2f;
-	
+	GameData data = new GameData();
+
 	void Awake() {
 		if (instance == null) {
 			instance = this;
@@ -35,7 +39,16 @@ public class Gm : MonoBehaviour {
 				player = obj.GetComponent<PlayerCtrl>();
 			}
 		}
+		DisplayHudData();
 	}
+	
+		void DisplayHudData() {
+			ui.hud.txtCoinCount.text = "x " + data.coinCount;
+		}
+		
+		public void IncrementCoinCount() {
+			data.coinCount++;
+		}
 	
 	public void RespwanPlayer(){
 		Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
