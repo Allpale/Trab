@@ -109,7 +109,6 @@ public class PlayerCtrl : MonoBehaviour {
 	void Jump() {
 		if (isGrounded) {
 		isJumping = true;
-		AudioManager.instance.PlayJumpSound(gameObject);
 		rb.AddForce(new Vector2(0f ,jumpSpeed));
 		anim.SetInteger("Stats", 8);
 
@@ -118,7 +117,6 @@ public class PlayerCtrl : MonoBehaviour {
 
 		if (canDoubleJump && !isGrounded) {
 			rb.velocity = Vector2.zero;
-			AudioManager.instance.PlayJumpSound(gameObject);
 			rb.AddForce(new Vector2(0f, jumpSpeed));
 			anim.SetInteger("State", 1);
 			canDoubleJump = false;

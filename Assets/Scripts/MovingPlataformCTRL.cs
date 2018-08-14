@@ -25,7 +25,7 @@ public class MovingPlataformCTRL : MonoBehaviour {
 				yield return new WaitForSeconds(waitTime);
 			}
 			transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
-			yield return null;
+			yield return null; 
 		}
 	}
 
