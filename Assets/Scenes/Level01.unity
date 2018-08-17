@@ -248,6 +248,52 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 70896093}
+--- !u!1001 &106868429
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1059528355}
+    m_Modifications:
+    - target: {fileID: 4375028199659782, guid: d38ced0bdf124064ea126666645522d9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -20.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375028199659782, guid: d38ced0bdf124064ea126666645522d9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -5.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375028199659782, guid: d38ced0bdf124064ea126666645522d9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -90.21875
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375028199659782, guid: d38ced0bdf124064ea126666645522d9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375028199659782, guid: d38ced0bdf124064ea126666645522d9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375028199659782, guid: d38ced0bdf124064ea126666645522d9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375028199659782, guid: d38ced0bdf124064ea126666645522d9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375028199659782, guid: d38ced0bdf124064ea126666645522d9, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386929206634884, guid: d38ced0bdf124064ea126666645522d9, type: 2}
+      propertyPath: m_TagString
+      value: Coin
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d38ced0bdf124064ea126666645522d9, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &136808101
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,7 +530,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 206871071}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 330234146}
+        m_MethodName: RestartLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &206871071
@@ -6234,19 +6291,19 @@ CompositeCollider2D:
         Y: -33710936
       - X: 15000000
         Y: -33710936
-    - - X: 276757824
+    - - X: 231757808
         Y: -33476562
-      - X: 277187488
+      - X: 232187504
         Y: -33671876
-      - X: 280000000
+      - X: 235000000
         Y: -33671876
-      - X: 280000000
+      - X: 235000000
         Y: -30000000
-      - X: 275000000
+      - X: 230000000
         Y: -30000000
-      - X: 275000000
+      - X: 230000000
         Y: -33671876
-      - X: 275624992
+      - X: 230624992
         Y: -33671876
     - - X: 175000000
         Y: -30000000
@@ -6286,34 +6343,6 @@ CompositeCollider2D:
         Y: -33710936
       - X: 291484384
         Y: -33710936
-    - - X: 231757808
-        Y: -33476562
-      - X: 232187504
-        Y: -33671876
-      - X: 235000000
-        Y: -33671876
-      - X: 235000000
-        Y: -30000000
-      - X: 230000000
-        Y: -30000000
-      - X: 230000000
-        Y: -33671876
-      - X: 230624992
-        Y: -33671876
-    - - X: 186757808
-        Y: -33476562
-      - X: 187187504
-        Y: -33671876
-      - X: 190000000
-        Y: -33671876
-      - X: 190000000
-        Y: -30000000
-      - X: 185000000
-        Y: -30000000
-      - X: 185000000
-        Y: -33671876
-      - X: 185624992
-        Y: -33671876
     - - X: 261757808
         Y: -33476562
       - X: 262187504
@@ -6328,19 +6357,19 @@ CompositeCollider2D:
         Y: -33671876
       - X: 260624992
         Y: -33671876
-    - - X: 246757808
+    - - X: 201757808
         Y: -33476562
-      - X: 247187504
+      - X: 202187504
         Y: -33671876
-      - X: 250000000
+      - X: 205000000
         Y: -33671876
-      - X: 250000000
+      - X: 205000000
         Y: -30000000
-      - X: 245000000
+      - X: 200000000
         Y: -30000000
-      - X: 245000000
+      - X: 200000000
         Y: -33671876
-      - X: 245624992
+      - X: 200624992
         Y: -33671876
     - - X: 216757808
         Y: -33476562
@@ -6356,19 +6385,47 @@ CompositeCollider2D:
         Y: -33671876
       - X: 215624992
         Y: -33671876
-    - - X: 201757808
+    - - X: 186757808
         Y: -33476562
-      - X: 202187504
+      - X: 187187504
         Y: -33671876
-      - X: 205000000
+      - X: 190000000
         Y: -33671876
-      - X: 205000000
+      - X: 190000000
         Y: -30000000
-      - X: 200000000
+      - X: 185000000
         Y: -30000000
-      - X: 200000000
+      - X: 185000000
         Y: -33671876
-      - X: 200624992
+      - X: 185624992
+        Y: -33671876
+    - - X: 246757808
+        Y: -33476562
+      - X: 247187504
+        Y: -33671876
+      - X: 250000000
+        Y: -33671876
+      - X: 250000000
+        Y: -30000000
+      - X: 245000000
+        Y: -30000000
+      - X: 245000000
+        Y: -33671876
+      - X: 245624992
+        Y: -33671876
+    - - X: 276757824
+        Y: -33476562
+      - X: 277187488
+        Y: -33671876
+      - X: 280000000
+        Y: -33671876
+      - X: 280000000
+        Y: -30000000
+      - X: 275000000
+        Y: -30000000
+      - X: 275000000
+        Y: -33671876
+      - X: 275624992
         Y: -33671876
     - - X: -269940000
         Y: -34940000
@@ -7468,6 +7525,13 @@ CompositeCollider2D:
       - {x: 1.2304689, y: -3.2929688}
       - {x: 1.359375, y: -3.3710938}
       - {x: 1.5, y: -3.3710938}
+    - - {x: 18.675781, y: -3.3476562}
+      - {x: 18.71875, y: -3.3671877}
+      - {x: 19, y: -3.3671877}
+      - {x: 19, y: -3}
+      - {x: 18.5, y: -3}
+      - {x: 18.5, y: -3.3671877}
+      - {x: 18.5625, y: -3.3671877}
     - - {x: 24.675781, y: -3.3476562}
       - {x: 24.71875, y: -3.3671877}
       - {x: 25, y: -3.3671877}
@@ -7475,27 +7539,6 @@ CompositeCollider2D:
       - {x: 24.5, y: -3}
       - {x: 24.5, y: -3.3671877}
       - {x: 24.5625, y: -3.3671877}
-    - - {x: 21.675781, y: -3.3476562}
-      - {x: 21.71875, y: -3.3671877}
-      - {x: 22, y: -3.3671877}
-      - {x: 22, y: -3}
-      - {x: 21.5, y: -3}
-      - {x: 21.5, y: -3.3671877}
-      - {x: 21.5625, y: -3.3671877}
-    - - {x: 20.175781, y: -3.3476562}
-      - {x: 20.21875, y: -3.3671877}
-      - {x: 20.5, y: -3.3671877}
-      - {x: 20.5, y: -3}
-      - {x: 20, y: -3}
-      - {x: 20, y: -3.3671877}
-      - {x: 20.0625, y: -3.3671877}
-    - - {x: 23.175781, y: -3.3476562}
-      - {x: 23.21875, y: -3.3671877}
-      - {x: 23.5, y: -3.3671877}
-      - {x: 23.5, y: -3}
-      - {x: 23, y: -3}
-      - {x: 23, y: -3.3671877}
-      - {x: 23.0625, y: -3.3671877}
     - - {x: 27.675783, y: -3.3476562}
       - {x: 27.71875, y: -3.3671877}
       - {x: 28, y: -3.3671877}
@@ -7503,6 +7546,20 @@ CompositeCollider2D:
       - {x: 27.5, y: -3}
       - {x: 27.5, y: -3.3671877}
       - {x: 27.5625, y: -3.3671877}
+    - - {x: 26.175781, y: -3.3476562}
+      - {x: 26.21875, y: -3.3671877}
+      - {x: 26.5, y: -3.3671877}
+      - {x: 26.5, y: -3}
+      - {x: 26, y: -3}
+      - {x: 26, y: -3.3671877}
+      - {x: 26.0625, y: -3.3671877}
+    - - {x: 23.175781, y: -3.3476562}
+      - {x: 23.21875, y: -3.3671877}
+      - {x: 23.5, y: -3.3671877}
+      - {x: 23.5, y: -3}
+      - {x: 23, y: -3}
+      - {x: 23, y: -3.3671877}
+      - {x: 23.0625, y: -3.3671877}
     - - {x: 17.5, y: -3}
       - {x: 17.011719, y: -3}
       - {x: 17, y: -3.0039062}
@@ -7522,20 +7579,20 @@ CompositeCollider2D:
       - {x: 29, y: -3}
       - {x: 29, y: -3.3710938}
       - {x: 29.14844, y: -3.3710938}
-    - - {x: 18.675781, y: -3.3476562}
-      - {x: 18.71875, y: -3.3671877}
-      - {x: 19, y: -3.3671877}
-      - {x: 19, y: -3}
-      - {x: 18.5, y: -3}
-      - {x: 18.5, y: -3.3671877}
-      - {x: 18.5625, y: -3.3671877}
-    - - {x: 26.175781, y: -3.3476562}
-      - {x: 26.21875, y: -3.3671877}
-      - {x: 26.5, y: -3.3671877}
-      - {x: 26.5, y: -3}
-      - {x: 26, y: -3}
-      - {x: 26, y: -3.3671877}
-      - {x: 26.0625, y: -3.3671877}
+    - - {x: 20.175781, y: -3.3476562}
+      - {x: 20.21875, y: -3.3671877}
+      - {x: 20.5, y: -3.3671877}
+      - {x: 20.5, y: -3}
+      - {x: 20, y: -3}
+      - {x: 20, y: -3.3671877}
+      - {x: 20.0625, y: -3.3671877}
+    - - {x: 21.675781, y: -3.3476562}
+      - {x: 21.71875, y: -3.3671877}
+      - {x: 22, y: -3.3671877}
+      - {x: 22, y: -3}
+      - {x: 21.5, y: -3}
+      - {x: 21.5, y: -3.3671877}
+      - {x: 21.5625, y: -3.3671877}
     - - {x: -26.994, y: -3.494}
       - {x: -26.994, y: -3.006}
       - {x: -26.988, y: -3.006}
@@ -7733,6 +7790,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 295134951}
   playerPrefab: {fileID: 1217440044303382, guid: a2610c47043bf094a97a2e9cad57159c,
     type: 2}
+  maxTime: 120
   ui:
     hud:
       txtCoinCount: {fileID: 136808103}
@@ -8258,7 +8316,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 556840677}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 330234146}
+        m_MethodName: CloseApp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &556840677
@@ -8537,7 +8606,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 738112223}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 330234146}
+        m_MethodName: ExitToMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &738112223
@@ -9516,113 +9596,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1452386041}
---- !u!1 &1507030818
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1507030819}
-  - component: {fileID: 1507030821}
-  - component: {fileID: 1507030820}
-  m_Layer: 10
-  m_Name: Kunai
-  m_TagString: Kunai
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1507030819
+--- !u!4 &1507030819 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1507030818}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.16, y: -5.21, z: -90.21875}
-  m_LocalScale: {x: 1.8, y: 1.8, z: 0}
-  m_Children: []
-  m_Father: {fileID: 1059528355}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &1507030820
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1507030818}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.08, y: 0.4}
-    newSize: {x: 0.08, y: 0.4}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.03560146, y: 0.028857127}
-      - {x: -0.031856697, y: -0.19511436}
-      - {x: 0.026971236, y: -0.19674303}
-      - {x: 0.035495494, y: -0.037466157}
-      - {x: 0.04042705, y: -0.017888017}
-      - {x: 0.03854937, y: 0.008045833}
-      - {x: 0.012314321, y: 0.18534264}
-      - {x: 0.0025667085, y: 0.19616896}
-      - {x: -0.006882615, y: 0.18746907}
---- !u!212 &1507030821
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1507030818}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5e440a6f337354e498b55892f378179a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.08, y: 0.4}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_PrefabParentObject: {fileID: 4375028199659782, guid: d38ced0bdf124064ea126666645522d9,
+    type: 2}
+  m_PrefabInternal: {fileID: 106868429}
 --- !u!1 &1511943519
 GameObject:
   m_ObjectHideFlags: 0
@@ -10645,7 +10623,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1672535993}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 330234146}
+        m_MethodName: CloseApp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1672535993
@@ -10898,7 +10887,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1727587162}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 330234146}
+        m_MethodName: ExitToMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1727587162
@@ -11037,7 +11037,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1802696221
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11407,7 +11407,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1978383391}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 330234146}
+        m_MethodName: RestartLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1978383391
