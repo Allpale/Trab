@@ -118,7 +118,6 @@ public class Gm : MonoBehaviour {
 	public void RespwanPlayer(){
 		Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
 		}
-	
 	public void LevelComplete() {
 		Destroy(player.gameObject);
 		timerOn = false;
