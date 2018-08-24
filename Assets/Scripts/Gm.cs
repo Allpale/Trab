@@ -118,4 +118,12 @@ public class Gm : MonoBehaviour {
 	public void RespwanPlayer(){
 		Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
 		}
+	
+	public void LevelComplete() {
+		Destroy(player.gameObject);
+		timerOn = false;
+		ui.levelComplete.txtCoinCount.text = "Coins: " + data.coinCount;
+		ui.levelComplete.txtTimer.text = "Timer: " + timeLeft.ToString("F0");
+		ui.levelComplete.levelCompletePanel.SetActive(true);	
 	}
+}
