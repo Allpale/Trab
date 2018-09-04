@@ -39,6 +39,7 @@ public class Gm : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		
 		if (player == null) {
 			GameObject obj = GameObject.FindGameObjectWithTag("Player");
 			if (obj != null) {

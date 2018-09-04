@@ -6,11 +6,11 @@ public class Parallaxing : MonoBehaviour {
     private float[] parallaxScales;
     public float smoothing = 1f;
 
-    private Transform cam;
+    public Transform cam;
     private Vector3 previousCamPos;
 
     void Awake() {
-        cam = Camera.main.transform;
+        //cam = Camera.main.transform;
     }
 
 

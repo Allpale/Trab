@@ -6,7 +6,7 @@ public class NukeninPatrolCTRL : MonoBehaviour {
 	
 	public Transform Pos1, Pos2;
 	public float speed = 2f;
-	public float waitTime = 3f;
+	public float waitTime = 1f;
 	Vector3 nextPos;
 
 	void Start () {

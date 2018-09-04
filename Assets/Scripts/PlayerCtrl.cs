@@ -74,8 +74,8 @@ public class PlayerCtrl : MonoBehaviour {
 		}
 	
 		ShowFalling();
-		
 	}
+
 
 	void MoveHorizontal(float speed) {
 		rb.velocity = new Vector2(speed, rb.velocity.y);
@@ -133,6 +133,9 @@ public class PlayerCtrl : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D other) {
 		if (other.gameObject.layer == LayerMask.NameToLayer("Ground")){
 			isJumping = false;
+		}
+		else if (other.gameObject.layer == LayerMask.NameToLayer("Enemy")) {
+			Gm.instance.KillPlayer();
 		}
 	}
 
